@@ -1,0 +1,12 @@
+
+
+	youtube channer : Iamluckydeveloper
+	youtube URL : https://www.youtube.com/@Iamluckydeveloper/playlists
+
+	From Zero to Production Complete .NET 7 Web API Tutorials,,
+A course for Software developers which gives complete overview on how to create 
+.NET Web APIs from scratch following all the industry standard best practices.
+
+
+Structuring the project with Clean Architecture | .NET 7 Web API - Tutorial 2
+Create Database Structure Using Visual Studio DB Project | .NET 7 WEB API - Tutorial 3
