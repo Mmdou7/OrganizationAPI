@@ -67,6 +67,13 @@
     <Build Include="Security\crmuser2.sql" />
     <Build Include="Tables\tblCompanies.sql" />
     <Build Include="Tables\tblEmployees.sql" />
+    <Build Include="StoredProcedures\spGetRecords.sql" />
+    <Build Include="StoredProcedures\spGetRecordsById.sql" />
+    <Build Include="StoredProcedures\spInsertRecord.sql" />
+    <Build Include="StoredProcedures\spUodateRecord.sql" />
+    <Build Include="StoredProcedures\spSoftDeleteRecord.sql" />
+    <Build Include="StoredProcedures\spSoftDeleteForeignKeyRecord.sql" />
+    <Build Include="StoredProcedures\spGetTotalRecordsCount.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="InitializationScript.sql" />

@@ -1,7 +1,26 @@
-﻿namespace Organization.Domain.Company.Models;
+﻿using Organization.Domain.Common.Models;
+using Organization.Domain.Common.Utilities;
 
-public class Company
+namespace Organization.Domain.Models;
+
+[TableName("tblCompanies")]
+public sealed class Company : IDbEntity
 {
-    public string Id { get; set; } = string.Empty;
-    public string Name { get; set; } = string.Empty;
+    [PrimaryKey]
+    [ColumnName("Id")]
+    public string Id { get; set; } = ShortGuid.NewGuid();
+
+    [ColumnName("Name")]
+    public string? Name { get; set; }
+
+    [ColumnName("Address")]
+    public string? Address { get; set; }
+
+    [ColumnName("Country")]
+    public string? Country { get; set; }
+
+    [ColumnName("IsDeleted")]
+    public bool IsDeleted { get; set; }
+    [Navigation(typeof(Employee), "CompanyId")]
+    public IEnumerable<Employee> Employees { get; set; } = new List<Employee>();
 }

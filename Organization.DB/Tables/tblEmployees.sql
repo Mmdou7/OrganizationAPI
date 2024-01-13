@@ -10,6 +10,7 @@
 	[CreatedOn] DATETIME NOT NULL DEFAULT GETDATE(),
 	[ModifiedOn] DATETIME NOT NULL DEFAULT GETDATE(),
 	[Salary] DECIMAL(10,2) NOT NULL,
+	[IsDeleted] BIT NOT NULL DEFAULT 0
 	CONSTRAINT [PK_Employees] PRIMARY KEY CLUSTERED ([Id] ASC),
 	CONSTRAINT [FK_Employees_Companies] FOREIGN KEY ([CompanyId]) REFERENCES [dbo].[tblCompanies] ([Id]),
 	CONSTRAINT [UK_Employees_Employees] UNIQUE NONCLUSTERED (PagingOrder),

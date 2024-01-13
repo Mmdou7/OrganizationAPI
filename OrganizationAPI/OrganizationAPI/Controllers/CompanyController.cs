@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Organization.Domain.Company.Models;
+using Organization.Domain.Models;
 
 namespace Organization.Presentation.API.Controllers;
 
